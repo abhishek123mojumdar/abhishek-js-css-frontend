@@ -90,3 +90,37 @@ body{
     }
 }
 
+.drag-drop-conatiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vh;
+    margin: 0;
+}
+
+.empty {
+    width: 150px;
+    height: 150px;
+    background-color: #f6F7FB;
+    content: '';
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.fill {
+    width: 150px;
+    height: 150px;
+    background-image: url('https://source.unsplash.com/random/150x150');
+    cursor: pointer;
+    border-radius: 10px ;
+}
+
+.hold {
+    border: 5px solid grey;
+}
+
+.hovered {
+    background-color: black;
+    border-color: azure;
+    border-style: dashed;
+}
