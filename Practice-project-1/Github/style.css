@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6F7FB;
+    font-family: 'Muli', sans-serif;
+    margin:0;
+    height: 100vh;
+    overflow:auto;
+    color: aliceblue;
+    position: relative;
+}
+
+.nav-container {
+    position: fixed;
+    width: 100vw;
+    top:0;
+    left:0;
+    right: 0;
+    height: 4rem;
+    background-color: transparent;
+    color: #f6F7FB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20vw;
+    padding-top: 20px;
+}
+
+.nav-link-container a {
+    color: #f6F7FB;
+    text-decoration: none;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    color: rgb(0, 139, 120);
+    text-align: center;
+}
+
+.container-text {
+    mask-mode: 1200px;
+    padding-bottom: 10rem;
+    color: #f6F7FB;
+}
+
+.input-box {
+    width: 70vw;
+    height: 3rem;
+    border: 2px solid rgb(0, 139, 120);
+    border-radius: 10px;
+}
+
+/* .profile-avator {
+    display: flex;
+    flex-direction: column;
+} */
+
+.profile-card-conatiner {
+    max-width: 1200px;
+    height: 350px;
+    min-width: 300px;
+    background-image: linear-gradient(rgb(0, 6, 5) , rgb(0, 139, 120));
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(139, 241, 227);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+
+.avator-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f6F7FB;
+    background-image: url('https://avatars.githubusercontent.com/u/17353764?v=4');
+    background-size: cover;
+}
+
+.profile-info {
+    width: 85%;
+    color: #f6F7FB;
+}
+
+.profile-info ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.error-handling {
+    color: #f6F7FB;
+}
