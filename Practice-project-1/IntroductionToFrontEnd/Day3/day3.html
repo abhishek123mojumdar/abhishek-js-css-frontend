@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="day3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <nav id="navBar"> 
+        <div class="nav-links">
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <a href="https://www.youtube.com" target="_blank">Youtube</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://www.naukri.com" target="_blank">Naukri</a>
+            <a href="../../PageSlider-Carousel/index.html" target="_blank">Page Slider Carousel</a>
+            
+            <!-- 1) The above is an anchor tag . It is used to add links to your page. 
+            This can be a link to an external website or 
+            This can be a link to a page that we have created inside the project
+            The href attribute is used to provide in the address as shown above
+
+            https://www.youtube.com ->  this is an absolute link as it is directly linked to a website
+            ../../PageSlider-Carousel/index.html -> this a relative link as it links to a page 
+            relative to the location of the current page
+             -->
+        </div>
+    </nav>
+
+    <!-- <hr/>
+
+    <div class="nav-class">
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.naukri.com" target="_blank">Naukri</a></li>
+        </ul>
+    </div> -->
+
+        <!-- 5) We have two types of tags in HTML Semantic Tags and Non Semantic tags
+                Semantic tags are those from whose name we understand what it will be used for like
+                Header -> For headings 
+                Footer -> For the Footer Content
+                main -> For main content
+                section -> for dividing the page into different sections
+            Point to be remembered -- these all can be used at different times and different places
+            depending upon the use case
+            Adv :  Makes the code readable
+                   More we use semantic tags the better is the ranking
+                   Good Ux 
+        
+        The Non semantic tags are those tags which do not mean any thing like DIV SPAN P etc tec
+    -->
+
+        <header>
+            <a href="https://github.com/abhishek123mojumdar" target="_blank"> <img src="./images/abhishek.png" alt="Abhishek" width="100" height="100" > </a>
+            <!-- 2) The above is an image tag . This is an inline element . This helps us to render an image on to the screen
+        The src attribute takes in the path of the image as an input and the alt tag is used to display an 
+        alternative text in case the image is not loaded
+
+        We can provide the width and height of the image either using CSS or using the width and height attribute -->
+            <h3>This is Abhishek</h3>
+            <small><u>You can click on my image to reach my GitHub profile</u></small>
+            <p>I am a  <em>Frontend Developer</em> and I love coding in <b>JavaScript</b></p>
+        <p>Currently I am working with <i>Dell EMC</i> as an  <u>Angular Developer</u></p>
+
+        <!-- 3) The <b> tag helps to make the text bold the 
+            <i>tag helps to make the characters italic and the 
+            <u> tag is used for underlining -->
+        <small>I have got experience in <big>Domains</big> like  Networking , E-commerce and Storage</small>
+                <!-- 4) The Big and small tags are used to make the text big and small respectively -->
+        <pre>I    am     a   Frontend    trainer     in  Besant
+                                                                    tech
+        </pre>
+                <!-- 5)The pre tag helps to diplay the text as is i.e with spaces and line breaks  unlike the <p> tags
+                which ignores the spaces    -->
+        <!-- <p>I    am     a   Frontend    trainer     in  Besant
+            tech
+        </p> -->
+        </header>
+
+        <br>
+
+        
+        <main>
+            <section>
+                <!-- 0) By default we have box sizing as content box . When we provide width and height to an element it we basically 
+                manipulate the property of the content box that means that the styles whatever are added are added on the outside 
+                of the box . Eg : if the width is 500px and border is 5px and the padding is 25px then the actual size is 500+25+5 px 
+                which is 530px
+
+                On the other hand box-sizing border-box changes the above mentioned properties within the box  -->
+
+                <p>Let us understand what is BOX-SIZING</p> 
+                <br/>
+                <div class="box"> BOX CONTENT </div>
+                <br>
+                <div class="box-border"> BORDER BOX </div>
+            </section>
+
+            <section style="padding-top: 2rem ;">
+                <p>Let us learn something new about the table</p> 
+                <table>
+                    <!-- 6) caption helps us to provide a heading of the table which tells us what is the table about -->
+                    <caption>Savings</caption>
+                      <tr>
+                        <!-- Col span tell us what should be the ran of the header i.e how many rows the header must cover
+
+                        Can you guys tell me what else styling can be done with the table -->
+                        <th colspan="2">Month</th>
+                      </tr>
+                      <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                      </tr>
+                      <tr>
+                        <td>February</td>
+                        <td>$80</td>
+                      </tr>
+                    </table>
+            </section>
+                <br>
+            <section>
+                <form action="/submit.php">
+                    <p>Let us learn something new about the forms</p> 
+                    <div class="inp-con">
+                        <input type="text" placeholder="Enter your Name" id="name" value="Abhishek" class="input-box"/>
+                    </div>
+                    <div class="inp-con">
+                        <input type="number" placeholder="Enter your Name" id="num" value="1" class="input-box"/>
+                    </div class="inp-con">
+                    <div class="inp-con">
+                        <input type="password" placeholder="Enter your password" id="pass"  class="input-box"/>
+                    </div>
+                    <div class="inp-con">
+                        <input type="email" placeholder="Enter your email" id="email" class="input-box"/>
+                    </div>
+                    
+                    <div class="inp-con">
+                        <input type="email" placeholder="Enter your email" id="email" class="input-box"/>
+                    </div>
+
+                    <div class="inp-con">
+                        <input type="radio" id="html" name="fav_language" value="HTML-FR" checked>
+                        <label for="html">HTML</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS-FR">
+                        <label for="css">CSS</label><br>
+                    </div>
+                    <p id="showResult"></p>
+                    <div class="inp-con">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> I have a bike</label><br>
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                        <label for="vehicle2"> I have a car</label><br>
+                        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                        <label for="vehicle3"> I have a boat</label><br><br>
+                    </div>
+                    <div class="inp-con">
+                        <label for="cars">Choose a car:</label>
+
+                        <select name="cars" id="cars">
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="mercedes">Mercedes</option>
+                          <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                   
+                   
+                    <input type="submit" name="Submit"/>
+                    
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="contact">
+                <p>You can contact me at</p>
+                <p>Email : abhishek123mojumdar@gmail.com</p>
+                <p>Social media : LinkedIn</p>
+                <p>code : Git Hub</p>
+            </div>
+        </footer>
+    
+
+    <script src="script3.js"></script>
+</body>
+</html>

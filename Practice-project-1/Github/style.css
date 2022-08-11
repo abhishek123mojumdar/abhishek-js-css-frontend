@@ -23,8 +23,8 @@ body{
     left:0;
     right: 0;
     height: 4rem;
-    background-color: transparent;
-    color: #f6F7FB;
+    background-color: rebeccapurple;
+    color: #fbf6f6;
     display: flex;
     justify-content: space-between;
 }

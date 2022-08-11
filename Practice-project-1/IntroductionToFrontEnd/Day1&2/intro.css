@@ -1,0 +1,136 @@
+/* What is CSS ?
+CSS is Cascading style sheet . It is a style language which helps to manipulate the appearance of a markup languages like HTML
+Css is the cosmetic of the web
+
+load html --> parse html --> create dom tree -->display webpage
+                    |                   |
+                load css ------->  parse CSS    
+
+The Ways in which we can apply CSS to an HTML document 
+1)  inline
+2)  Style block directly inside of a document
+3)  Style sheet 
+
+We can use multiple Css file for the the decoration of our HTML
+Cascading basically means that style information from multiple sources can be combined together
+
+** Moreover we can have all the above in the same document 
+i.e inline , style block  and style sheet in the same document 
+
+in such cases we need to understand the precedence of the styles
+
+Order of precedence
+
+1) Inline styles -->> overrides all styles
+2) Style blocks -->> Overrides style sheet
+3) Style Sheet -->> last precedence
+
+
+Default Browser Styles ? 
+These are the styles that are pre exisiting  in the browser that give the browser HTML doc a basic structure, by writing css we
+override that 
+
+Basic Syntax of a CSS is a selector and properties and values in  a declaration block 
+
+selectors basically denote an element that you want to style 
+eg: <p><DIV><span><ul>
+
+inside the declartion block we will have properties and attributes
+
+
+
+Basic selectors in CSS
+
+1> Type selectors (element selectors):
+These are global in nature which means that it will effect every element with that particular type (Ex)
+
+3> Class Selector
+These match the elements based on the contents of their class attribute (Ex)
+We can define a certain set of styles for a class and reuse the class where ever we want
+.class
+
+3> Id Selector
+
+effects the element with a corresponding ID. This is used if we specifically want to target a particular element (Ex)
+#id
+
+4> Descendant Selector
+
+Matches all elements that are the descendant of a particular element
+
+div span {
+    color : blue 
+}
+
+Remeber the syntax ... separate the selectors by space
+
+Combinators
+
+Descendant Seletors (space)
+Child selectore (>)
+Matches the direct child of the DIV
+
+div > span {
+    color : blue 
+}
+
+div > span {
+    color : blue ;
+    font-weight: 300;
+    transform: scaleY(1);
+    transition: all 0.4s ease;
+}
+
+div > span:hover {
+    font-weight: 900;
+    transform: scaleY(2);
+    cursor: pointer;
+}
+
+Adjacent sibling selector (+)
+
+This gets applied when an element is a sibling / adjancent to another element
+
+p + span {
+    color : red 
+}
+
+General sibling selector (~)
+
+All the elements that are on the same level
+
+p ~ span {
+    color : red 
+}
+
+
+How does CSS loads on to your HTML
+
+
+#id .class span {
+    color : yellow 
+}
+
+css is read form right to left
+
+Last mentioned style of an element is picked up 
+
+
+*/
+
+
+
+/* p {
+    background-color: red; text-align: center; color: aliceblue;
+} */
+
+
+div span {
+    color : red;
+    background-color: black;
+}
+
+div p {
+    color : white;
+    background-color: red;
+}

@@ -1,0 +1,38 @@
+1) 
+<html><head>
+<style>
+    div p { color: purple;  }
+    p div {  color: red;  }
+    p { color: orange; }
+    div p { color: blue; }
+</style>
+</head>
+<body>
+<div><p>This is a test.</p></div>
+
+2) 
+Convert this to inline style
+
+<html><head>
+<style>
+    p { color: blue; }
+</style>
+
+
+3)
+In terms of specificity, which one of these carries the most weight?
+
+id , inline , style block , class , element , style sheet ?
+
+4 ) Which of the following represents a child selector?
+.author > span
+ul + li
+#header .logo
+
+5)
+Which type of selector is used in the following rule?
+.container { font-size: 14px; }
+
+6)What is inside a declaration block?
+properties and values
+

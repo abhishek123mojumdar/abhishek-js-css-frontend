@@ -1,0 +1,137 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    /* The whole body has this font type */
+}
+
+#navBar {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(57, 11, 239);
+}
+
+#navBar a {
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+    margin: 1.5rem;
+    font-weight: 700;
+    font-size: large;
+    font-family: monospace;
+
+    /* The nav bar anchor tag is going to have monospace font-family as monospace as 
+    it has been specifically assigned to the anchor tag */
+}
+
+#navBar > div{
+    margin-left: 60%;
+    padding-top: 1.5rem;
+}
+
+/* .nav-class {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(57, 11, 239);
+}
+
+ul {
+    margin-left: 70%;
+    padding-top: 1.5rem;
+}
+
+li {
+    display: inline;
+    margin: 2rem;
+    font-size: large;
+    font-family: monospace;
+}
+
+li a {
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: large;
+    font-family: monospace;
+} */
+
+/* .headerSection {
+    padding-top: 2rem;
+    text-align: center;
+} */
+
+header {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    padding:3rem;
+}
+
+.box {
+    background-color: brown;
+    color: aliceblue;
+    width: 500px;
+    height: 4rem;
+    text-align: center;
+    /* border: 5px solid green;
+    padding: 25px; */
+}
+
+.box-border {
+    background-color: blue;
+    color: aliceblue;
+    width: 500px;
+    height: 4rem;
+    text-align: center;
+    /* border: 5px solid red;
+    padding: 25px; */
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(4, 80, 115);
+    padding-bottom: 10rem;
+}
+
+.contact {
+    text-align: center;
+    padding-top: 2rem;
+    color: aliceblue;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+
+  .input-box {
+    width: 20rem;
+    height: 3rem;
+    border: 1px solid blue;
+    border-radius: 5px;
+  }
+
+  .inp-con {
+    padding: 1rem;
+  }
+
+/* .headerSection p {
+    font-weight: 400;
+    color: rgb(45, 143, 160);
+}
+
+.headerSection p  i{
+    font-weight: 900;
+    color: rgb(0, 0, 255);
+}
+
+.headerSection p u{
+    font-weight: 900;
+    color: red;
+} */
+
