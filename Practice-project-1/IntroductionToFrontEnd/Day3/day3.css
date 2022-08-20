@@ -12,10 +12,11 @@ body {
 #navBar a {
     color: rgb(254, 254, 254);
     text-decoration: none;
-    margin: 1.5rem;
-    font-weight: 700;
-    font-size: large;
-    font-family: monospace;
+    margin-right: 24px;
+    font-weight: bolder;
+    font-size: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-style: italic;
 
     /* The nav bar anchor tag is going to have monospace font-family as monospace as 
     it has been specifically assigned to the anchor tag */
@@ -23,7 +24,7 @@ body {
 
 #navBar > div{
     margin-left: 60%;
-    padding-top: 1.5rem;
+    padding-top: 10px
 }
 
 /* .nav-class {
@@ -73,8 +74,8 @@ main {
     width: 500px;
     height: 4rem;
     text-align: center;
-    /* border: 5px solid green;
-    padding: 25px; */
+    border: 5px solid green;
+    padding: 25px;
 }
 
 .box-border {
@@ -83,8 +84,8 @@ main {
     width: 500px;
     height: 4rem;
     text-align: center;
-    /* border: 5px solid red;
-    padding: 25px; */
+    border: 5px solid red;
+    padding: 25px;
     box-sizing: border-box;
 }
 
