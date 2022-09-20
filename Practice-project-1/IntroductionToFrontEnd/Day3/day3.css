@@ -86,7 +86,7 @@ main {
     text-align: center;
     border: 5px solid red;
     padding: 25px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 footer {
@@ -136,3 +136,4 @@ table, th, td {
     color: red;
 } */
 
+ 

@@ -1,16 +1,31 @@
 body {
-    font-family: sans-serif;
+    font-family: cursive;
     /* The whole body has this font type */
     margin:0
 }
 
 button {
+    cursor:pointer
+}
+
+.btn {
     padding: 0.5rem;
-    width: 5rem;
+    width: 4rem;
     background-color: orangered;
     color: aliceblue;
     border-radius: 5px ;
     border-color: transparent;
+    cursor: pointer;
+}
+
+.btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-start {
+    border-radius: 50px;
+    border-color:transparent
 }
 
 input[type="text"] {
@@ -27,6 +42,7 @@ input[type="text"] {
     padding: 1rem 1rem;
     border: 2px solid rgb(36, 17, 209);
     border-radius: 5px;
+    margin: 2rem;
 }
 
 .container-get-data {
@@ -34,4 +50,21 @@ input[type="text"] {
     padding: 1rem 1rem;
     border: 2px solid rgb(224, 13, 13);
     border-radius: 5px;
+    display: flex;
+}
+
+.container-desc {
+    border: 1px solid green;
+    margin: 2rem;
+    padding: 1rem;
+    width: 60rem;
+}
+
+p {
+    padding: 0.2rem;
+}
+
+.input-container {
+    margin-top: 30px;
+    display: none;
 }

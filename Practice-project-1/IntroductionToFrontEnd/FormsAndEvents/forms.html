@@ -11,10 +11,16 @@
     </head>
 <body>
 <div class="container">
+    <p> hello | <span style="visibility: hidden;"> Abhishek </span> | FE Class </p>
+    <p> hello | <span style="display:none;"> Abhishek </span> | FE Class </p>
     <h1>HTML DOM Events</h1>
     <h2>The onclick Event</h2>
-    <button onclick="myFunction()">Click me</button>
+    <button onclick="myFunction()" class="btn">Click</button>
     <p id="demo"></p>
+
+    <button id="starttime" >Start</button>
+
+    <p id ="showTime"></p>
 
     <hr>
 
@@ -28,36 +34,76 @@
     </form>  -->
 
     <div class="container-get-data">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="John"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <div class="container-desc">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS" checked>
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br/><br/>
+    
+            <!-- Notice that all the name of the inputs of the radio buttons are same -->
+    
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label><br/><br/>
+    
+                <select id="ddlViewBy">
+                    <option value="India" selected="selected">India</option>
+                    <option value="South Africa">SA</option>
+                    <option value="Australia">AUS</option>
+                  </select> <br/><br/>
+    
+            <textarea name="description" id="description" cols="60" rows="10"></textarea>
+            <br><br/>
+            <button onclick="submitData()"> Submit </button>
+            <button id="swapBtn"> Swap </button>
+        </div>
 
-        <input type="radio" id="html" name="fav_language" value="HTML">
-        <label for="html">HTML</label><br>
-        <input type="radio" id="css" name="fav_language" value="CSS" checked>
-        <label for="css">CSS</label><br>
-        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-        <label for="javascript">JavaScript</label><br/><br/>
-
-        <!-- Notice that all the name of the inputs of the radio buttons are same -->
-
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-            <label for="vehicle1"> I have a bike</label><br>
-            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-            <label for="vehicle2"> I have a car</label><br>
-            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-            <label for="vehicle3"> I have a boat</label><br/><br/>
-
-            <select id="ddlViewBy">
-                <option value="1" selected="selected">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select> <br/><br/>
+        <div class="container-desc">
+            <h3> Show form data</h3>
+            <p id="fullName"></p>
+            <p id="lang"></p>
+            <p id="vehicle"></p>
+            <p id="country"></p>
+            <p id="desc"></p>
+        </div>        
 
 
-        <button onclick="submitData()"> Submit </button>
-        <button id="swapBtn"> Swap </button>
+        <div class="container-desc">
+            <h3> Let us learn some string operations</h3>
+            <!-- <p>test | <span style="visibility: hidden;">Appropriate style in this tag</span> | test</p>
+            <p>test | <span style="display: none;">Appropriate style in this tag</span> | test</p> -->
+            <div class="btn-group">
+                <button id="charAt" class="btn" onclick="charAT()">CharAt</button>
+                <button id="repeat" class="btn" onclick="repeat()">Repeat</button>
+                <button id="includes" class="btn" onclick="includes()">Includes</button>
+                <!-- <button id="match" class="btn" onclick="match()">Match</button> -->
+                <button id="replace" class="btn" onclick="replace()">Replace</button>
+                <button id="search" class="btn" onclick="search()">Search</button>
+                <button id="go" class="btn-start">>></button>
+
+                
+            </div>
+            <div class="input-container">
+                <label for="inpStr">Input:</label><br>
+                <input type="text" id="inpStr" name="inpStr" value="" placeholder="Input string here"><br><br>
+                <label for="operation">Operation</label><br>
+                <input type="text" id="oprInt" name="operation" value="" placeholder="Operation string here"><br><br>
+                <p id="showOutput"> </p>
+            </div>
+            
+            
+            
+        </div>        
     </div>
 
 

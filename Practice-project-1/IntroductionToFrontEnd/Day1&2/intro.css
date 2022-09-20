@@ -125,12 +125,119 @@ Last mentioned style of an element is picked up
 } */
 
 
+
+
+/* div p {
+    color : white;
+    background-color: red;
+} */
+
+
+.color1 {
+    background-color: red;
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: 900;
+    font-style: oblique;
+    color: aliceblue;
+}
+.color2 {
+    background-color: rgb(0, 255, 68);
+    color: antiquewhite;
+}
+
+.color3 {
+    background-color: rgb(255, 0, 234);
+    color: antiquewhite;
+}
+
+#chnge {
+    color: blue;
+}
+
+.span1 {
+    background-color: blue;
+    color: aliceblue;
+}
+.span2 {
+    background-color: rgb(255, 0, 34);
+    color: aliceblue;
+}
+
+li {
+    color: forestgreen;
+    font-weight: bolder;
+}
+
+.any {
+    background-color: blue;
+    color: black;
+}
+
+/* div p { 
+    color: blue;
+}
+
 div span {
     color : red;
     background-color: black;
+} */
+
+/* #div1 > span {
+    color: wheat;
+    font-weight: 900;
+    background-color: blue;
+} */
+ p + span {
+    color: blue;
 }
 
-div p {
-    color : white;
-    background-color: red;
+.table-class {
+    border: 2px solid black;
+    border-color: brown;
+    border-radius: 5px;
+    border-top: 2px solid blue;
+    border-right: 2px solid rgb(255, 0, 0);
+    border-left: 2px solid rgb(0, 255, 60);
+    border-bottom: 2px solid rgb(167, 17, 232);
+    height: 80vh;
+}
+
+table , td , th {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 2px solid rgb(220, 11, 11);
+} 
+
+td, th {
+    padding: 2rem;
+    font-family: cursive;
+}
+
+.name {
+    border: 2px solid rgb(16, 14, 14);
+    font-family: cursive;
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.btn {
+    padding: 1rem;
+    border-color: transparent ;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 1rem;
+    background-color: blue;
+    letter-spacing: 2px;
+    color: wheat;
+}
+
+.form-input {
+    width: 25rem;
+    height:3rem;
+    border-radius: 5px;
+    border-color: 1px solid rgb(199, 192, 192);
 }
