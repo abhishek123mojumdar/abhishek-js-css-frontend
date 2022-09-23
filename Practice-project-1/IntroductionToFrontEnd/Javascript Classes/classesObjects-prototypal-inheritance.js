@@ -90,3 +90,26 @@ Employee.prototype = Object.create(Human.prototype)
 
 let emp = new Employee('Abhishek', 29, 1000 , 'Dell')
 console.log(emp)
+
+//Object.create is also a way to create an object .  
+
+let humanProto = {
+  getDetails : function () {
+    return `${this.name} who is of age ${this.age} has a salary ${this.salary}`
+},
+getAge : function () {
+  return `The age is ${this.age}`
+}
+}
+
+// The above gets set as prototype
+
+
+let humanObject  = Object.create(humanProto , {
+  age : {value : 29 },
+  name : {value : 'Abhishek' },
+  salary : {value : 1000 },
+})
+
+
+console.log(humanObject)

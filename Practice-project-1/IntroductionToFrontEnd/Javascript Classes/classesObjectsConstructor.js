@@ -32,9 +32,12 @@ Human.prototype.updateSalary = function (salary) {
 let abhishek = new Human ('Abhishek' , 29 , 'Dell',1000)
 let Jaideep = new Human ('Jaideep',29,'Cisco',3000)
 
+
+console.log(abhishek)
+console.log(Jaideep)
 console.log(abhishek.getDetails())
-console.log(Jaideep.getDetails())
-console.log(abhishek.salaryDetails())
-console.log(Jaideep.salaryDetails())
-console.log(Jaideep.updateSalary(8000))
+// console.log(Jaideep.getDetails())
+// console.log(abhishek.salaryDetails())
+// console.log(Jaideep.salaryDetails())
+// console.log(Jaideep.updateSalary(8000))
 

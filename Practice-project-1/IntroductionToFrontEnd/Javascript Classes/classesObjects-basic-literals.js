@@ -4,10 +4,10 @@ console.log(typeof nam)
 
 let nameObj = new String('abhishek')
 console.log(nameObj.toUpperCase())
-console.log(typeof nameObj)
+console.log(nameObj)
 
-// console.log(nam == nameObj) // true
-// console.log(nam === nameObj) // false
+ console.log(nam == nameObj)
+ console.log(nam === nameObj) 
 
 
 // nam here is a primitive dataType and hence has the type as string 
@@ -33,8 +33,8 @@ let human2 = {
     }
 }
 
-// console.log(human1.getDetails())
-// console.log(human2.getDetails())
+console.log(human1.getDetails())
+console.log(human2.getDetails())
 
 // Both objects have the same structure, same functionality but the values corresponding to the keys 
 // are different in both the objects
