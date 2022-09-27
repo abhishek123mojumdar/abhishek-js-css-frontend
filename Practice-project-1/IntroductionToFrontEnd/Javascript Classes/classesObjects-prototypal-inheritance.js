@@ -33,7 +33,7 @@ let Jaideep = {
     __proto__ : employee
 }
 
-console.log(abhishek.getDetails())
+console.log(abhishek)
 
 
 // Prototype chaining 
@@ -55,6 +55,15 @@ let animal = {
     __proto__: rabbit
   };
 
+  let obj = new Object()
+  longEar.walk = function () {
+    console.log('Yo! Wassup')
+  }
+
+  console.log(obj)
+  console.log(longEar)
+  console.log(longEar.earLength.toString())
+  longEar.walk()
 //   longEar.walk = function () {
 //     alert('Long ear is walking ')
 //   }
@@ -62,8 +71,8 @@ let animal = {
 /* an object priortizes its immediate object property . Once it does not find it in its immediate property then it goes inside the prototype chain*/
   
   // walk is taken from the prototype chain
-  longEar.walk(); // Animal walk
-  console.log(longEar.jumps); // true (from rabbit)
+  ; // Animal walk
+  //console.log(longEar.jumps); // true (from rabbit)
 
   
 
