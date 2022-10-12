@@ -69,3 +69,20 @@ export default Counter;
 
 //Never modify the state directly  , always use the useState method to modify the state 
 // what is bind ? show what is call apply and bind
+
+// let human = {
+//     name : 'Human',
+//     behavior : 'Happy',
+//     foo: function getDetails(a,b) {
+//       console.log(this.name + ' is ' + this.behavior + ' the sum is ' + (a+b) )
+//   }
+//   }
+  
+//   let abhishek = {
+//     name : 'Abhishek',
+//     behavior : 'ecstatic',
+//   }
+  
+// human.foo.call(abhishek,1,2)
+// human.foo.apply(abhishek,[1,2])  
+// human.foo.bind(abhishek,1,2)()
