@@ -1,0 +1,18 @@
+.counterClass {
+    padding: 1rem;
+    border: 1px solid red;
+    margin: 1rem;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+span , p {
+    font-family: cursive;
+}

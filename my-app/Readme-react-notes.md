@@ -54,4 +54,3 @@ Transpilers are also known as source-to-source compilers. So in essence they are
 1. Props are passed from one component to another component , whereas state is maintained within the component
 2. Props are function parameters and state is a variable declared inside a function
 3. Props are immutable whereas state can be changed using setState
-4. 
