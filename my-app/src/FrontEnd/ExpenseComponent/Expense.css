@@ -6,3 +6,18 @@ li {
     color: black;
     font-family: cursive;
 }
+
+
+.parent {
+    border: 1px solid black;
+}
+
+.paraClassRed { 
+    border: 3px solid rgb(245, 9, 9);
+    padding: 2rem;
+}
+
+.paraClassBlack { 
+    border: 4px solid rgb(14, 14, 14);
+    padding: 3rem;
+}

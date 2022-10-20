@@ -13,7 +13,7 @@ function FrontEndComponent() {
        <h1>This is a React Component</h1>
        <p>Name is {name}</p>
        <button onClick={changeName}>Click me</button>
-       <Counter></Counter>
+       <Counter name="abhishek"></Counter>
     </div>
   );
 }

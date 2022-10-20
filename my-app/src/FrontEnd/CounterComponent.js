@@ -11,11 +11,13 @@ class Counter extends Component {
     }
 
     increaseCount() {
+        // console.log('123')
+        // console.log(this.state)
         this.setState(
             {counter: this.state.counter + 1},
-            // ()=>{
-            //     console.log('Inside callback ' , this.state.counter)
-            // }
+            ()=>{
+                console.log('Inside callback ' , this.state.counter)
+            }
             
         )
         console.log(this.state.counter)
@@ -28,14 +30,14 @@ class Counter extends Component {
 
 
     increaseCountFORPrev() {
-        this.setState({
-            prevStateCounter : this.state.prevStateCounter + 1
-        })
+        // this.setState({
+        //     prevStateCounter : this.state.prevStateCounter + 1
+        // })
 
-        // this.setState(
-        //     (prevState)=> ({
-        //         prevStateCounter : prevState.prevStateCounter + 1
-        //     }))
+        this.setState(
+            (prevState)=> ({
+                prevStateCounter : prevState.prevStateCounter + 1
+            }))
         console.log(this.state.prevStateCounter)
     }
 
@@ -52,6 +54,10 @@ class Counter extends Component {
 
     // This is because React groups multiple setState calls into a single update for better performance
 
+    clickClassFun() {
+        console.log('fun class function has been triggered')
+        console.log(this)
+    }
    
     render () {
         //console.log('Rendered')
@@ -61,6 +67,9 @@ class Counter extends Component {
             <hr/>
             <div>Prev Count : <span>{this.state.prevStateCounter}</span></div>
             <button onClick={this.increaseFive.bind(this)}>Update counter based on prevState</button> 
+            <br/>
+            <br/>
+            <button onClick={this.clickClassFun.bind(this)}>Click Class</button>
         </div> )
     }
 }

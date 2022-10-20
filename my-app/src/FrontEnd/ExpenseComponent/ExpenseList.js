@@ -1,14 +1,20 @@
 import React , {useState} from 'react';
 import './Expense.css'
-
+const selectExpenseBtn = {
+  borderColor: 'transparent',
+  borderRadius: '10px',
+  color:'black',
+  backgroundColor:'white',
+  boxShadow: '0px 2px 4px grey'
+}
 export function ExpenseList(props) {
-  let {title,amount} = props
+  //let {title,amount} = props
   function selectExpenseData() {
     props.expenseSelectHandler({name : props.title , id:props.id})
   }
   return (
     <div>
-       <li>Title : {props.title}  amount : {props.amount} <button onClick={props.expenseSelectHandler}> Select Expense</button></li>
+       <li>Title : {props.title}  amount : {props.amount} <button style={selectExpenseBtn} onClick={selectExpenseData}> Select Expense</button></li>
        {/* <li>Title : {title}  amount : {amount}</li> */}
     </div>
   );
