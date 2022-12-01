@@ -1,0 +1,177 @@
+/* * {
+    background-color: rgb(243, 247, 247);
+} */
+
+/* Universal selector --> this seletor selects every single element in the html page
+and gives the same style to every single element in the page */
+
+div {
+    color: aliceblue;
+    margin: 2rem;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* element selector --> this will apply the styles to all the elements with the same selector */
+
+/* {
+    background-color: rgb(243, 247, 247);
+}
+
+div {
+    background-color: blue;
+} 
+
+ <div> 
+            <p>We are here to learn CSS selectors </p>
+            <p>Css selectors are tricky</p> 
+            <p>Although they become simple once the concept is understood</p>
+</div>
+This will create a weird style style as the <p> and <span> will take up the style from the universal selector
+and  the blue colour will only come in the parts of the DIV
+*/
+
+div.basic {
+    background-color: blueviolet;
+}
+
+div.red {
+    background-color: red;
+}
+
+div.green {
+    background-color: green;
+}
+
+/* we can select an element with a particular class name by using {element.} notation 
+this will help us to take up the basic div style with additional style of the class 
+Note: This is a (AND) kind of situation where all the classes and the selectors should match
+*/
+
+.decendant {
+    margin: 2rem;
+    background-color:rgb(216, 245, 179);
+    padding: 1rem;
+    border-radius: 10px;
+    
+}
+
+span , pre {
+    font-family: fantasy;
+    font-weight: bold;
+    color: coral;
+    background-color: #3044c1 ;
+    
+}
+
+/* when use comma separation that basically means -->  
+all the elements that are comma separated will be effected by the mentioned style */
+
+ul li {
+    border: 1px solid brown ;
+    padding: 0.5rem;
+    background-color: rgb(212, 7, 191);
+    color: rgb(232, 229, 229);
+    margin: 0.5rem;
+    
+}
+
+section.decendant p {
+    background-color: rgb(216, 216, 14);
+    color: rgb(100, 90, 242);
+    padding: 0.5rem;
+    
+}
+
+section.decendant div {
+    background-color: orangered;
+}
+
+/* if the elements are space separated then that means
+The first element is the parent element and the next element will be a decendant , 
+so all the decendant elements will be effected by the style (can be child , grandchild , great grand child and so on) */
+
+section.decendant  > article {
+    color: rgb(21, 149, 29);
+    font-size: x-large;
+}
+
+/* section > article p {
+    color: rgb(8, 60, 106);
+    
+}  mix and match*/
+
+/* if we want to target the direct child of a tag we need to use > sign */
+
+.siblings {
+    margin: 2rem;
+    background-color:rgb(123, 241, 218);
+    padding: 1rem;
+    border-radius: 10px;
+    color: rgb(65, 66, 67);
+}
+
+section.siblings p {
+    color: black;
+}
+
+li.tea {
+    color: green;
+}
+
+li.tea ~ li {
+    color: blueviolet;
+} 
+
+/* using the tilde sign basically means to select all the sibling after the ~ sign */
+
+section.siblings p.paraSibling1 {
+    color: chocolate;
+    font-size: large;
+}
+
+section.siblings p.paraSibling1 + p  {
+    color: rgb(30, 39, 210);
+    font-size: large;
+}
+
+/* to select the immediate sibling we would need the + sign */
+
+input {
+    width: 15rem;
+    height: 2rem;
+    border: 2px solid green;
+}
+
+li:hover {
+    background-color: deeppink;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 4px solid rgb(11, 0, 128);
+}
+
+input:disabled {
+    background-color: rgb(188, 180, 180);
+}
+
+section.pseudoSelectors ul li:nth-child(2n) {
+    color: rgb(1, 5, 10);
+}
+
+/* section.pseudoSelectors ul li:first-child {
+    color: rgb(1, 5, 10);
+}
+
+section.pseudoSelectors ul li:last-child {
+    color: rgb(1, 5, 10);
+} */
+
+
+ /* a pseudo selector is something that does not exsist on the HTML but has browser level functionality that we can cache in on 
+ hover, focus , disabled are examples of such pseudo selectors
+
+ hover tells us what is going to happen when we hover over an element */
+

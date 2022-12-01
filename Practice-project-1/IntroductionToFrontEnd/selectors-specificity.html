@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS selectors and specificty
+        </title> 
+        <link href="selectors-specificity.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="basic"> 
+            <p>We are here to learn CSS selectors </p>
+            <p>Css selectors are tricky</p> 
+            <p>Although they become simple once the concept is understood</p>
+        </div>
+        <div class="red"> 
+            <p>We are here to learn CSS selectors </p>
+            <p>Css selectors are tricky</p> 
+            <p>Although they become simple once the concept is understood</p>
+        </div>
+        <div class="green"> 
+            <p>We are here to learn CSS selectors </p>
+            <p>Css selectors are tricky</p> 
+            <p>Although they become simple once the concept is understood</p>
+        </div>
+        <hr/>
+        <section class="decendant">
+            <h1> We are inside the section now ! He we will learn about decendant selectors</h1>
+            <span> Hey !! this is a span </span>
+            <span> The spans are inline elements</span>
+            <pre> Hey this is a pre tag. This maintains the text format  
+            </pre>
+            <article> Hey this is a article tag
+                <p> 
+                    I am a p tag inside an Article tag which is inside a section tag
+                </p>    
+            </article>
+            <div>
+                <p> Below is a list of cars that will participate in the auction</p>
+            </div>
+           
+            <ul>
+                <li>Mercedes</li>
+                <li>Bmw</li>
+                <li>Audi</li>
+                <li>Range rover</li>
+            </ul>
+        </section>
+
+        <section class="siblings"> 
+            <h1> Here we will learn about sibling selector</h1>
+            <div>
+                <p> Below is the list bevarages of a party </p>
+                <ol>
+                    <li class="tea">Tea</li>
+                    <li>Coffee</li>
+                    <li>Cocktail</li>
+                    <li>Jaljeera</li>
+                </ol>
+                <p class="paraSibling1"> Para 1</p>
+                <p> Para 2</p>
+                <p> Para 3</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="pseudoSelectors">
+            <h1> Here we will learn about pseudo selectors </h1>
+            <p> Below is the list of programming languages</p>
+            <ul> 
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Go lang</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>perl</li>
+            </ul>
+            <input type="text" placeholder="please enter your data here" id="inp">
+            <input type="text" placeholder="please enter your data here" id="inpDis" disabled>
+        </section>
+    </body>
+</html>
