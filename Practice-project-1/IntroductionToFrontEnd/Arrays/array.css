@@ -1,0 +1,46 @@
+body {
+    font-family: cursive;
+    /* The whole body has this font type */
+    margin:0
+}
+
+.container {
+    height: 90vh;
+    width: 90vw;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+button {
+    cursor:pointer
+}
+
+.btn {
+    width: 5rem;
+    height: 1.2rem;
+    border: 1px solid transparent;
+    color: aliceblue;
+    background-color: blue;
+    box-shadow: 1px 2px 4px grey;
+}
+
+.animalList {
+    width: 80vh;
+    padding: 1rem;
+    border: 2px solid brown;
+    margin: 1rem;
+    list-style: none;
+}
+
+.animalListFound {
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: 900;
+    font-family: cursive;
+}
+
+.errorSpan {
+    color: red;
+    font-size: large;
+}
