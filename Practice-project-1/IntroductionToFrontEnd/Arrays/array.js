@@ -24,6 +24,7 @@ function search() {
   } else {
     errorSpan.innerText = 'Searched element not found'
     errorSpan.classList.add('errorSpan')
+    errorSpan.style.display = 'block'
   }
   
 }
