@@ -5,8 +5,7 @@ body {
 }
 
 .container {
-    height: 90vh;
-    width: 90vw;
+    width: 95vw;
     margin: 1rem;
     padding: 1rem;
 }
@@ -43,4 +42,24 @@ button {
 .errorSpan {
     color: red;
     font-size: large;
+}
+
+
+.cards-layout {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.box {
+    width: 200px;
+    border: 2px solid transparent;
+    border-radius: 20px ;
+    color: aliceblue;
+    font-family: monospace ;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 4px grey;
 }
