@@ -53,3 +53,7 @@ console.log(book2)
 let revisedPrice = book1.reviseBook(700)
 console.log(revisedPrice)
 console.log(mag1)
+
+
+console.log('98765458')
+console.log(Book.getAuthor())

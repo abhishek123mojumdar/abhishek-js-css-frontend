@@ -1,0 +1,46 @@
+.container {
+    width: 30vw;
+    height: 30vh;
+    background-color: aquamarine;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.child {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: 1px solid black;
+    position: absolute;
+    top:0;
+    left:0;
+    /* left:0;
+    bottom: 0; */
+}
+
+/* When there is no relative in parent for an absolute child it will position it self corresponding to the body , else it will position itself corresponding to the parent */
+
+
+.container1 {
+    width: 30vw;
+    height: 30vh;
+    background-color: yellowgreen;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.child1 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: 1px solid black;
+    /* position: relative;
+    top:30px;
+    left:20px; */
+}

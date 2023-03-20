@@ -22,6 +22,8 @@
 
     <p id ="showTime"></p>
 
+    <button onclick="toggle()"> Toggle</button>
+    <p id="paraToggle"> Hey !! Welcome </p>
     <hr>
 
     <!-- <form action="/action_page.php" id="myForm">
@@ -36,9 +38,9 @@
     <div class="container-get-data">
         <div class="container-desc">
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
+            <input type="text" id="fname" name="fname" value="John" class="inp"><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="text" id="lname" name="lname" value="Doe" class="inp"><br><br>
     
             <input type="radio" id="html" name="fav_language" value="HTML">
             <label for="html">HTML</label><br>
@@ -62,7 +64,7 @@
                     <option value="Australia">AUS</option>
                   </select> <br/><br/>
     
-            <textarea name="description" id="description" cols="60" rows="10"></textarea>
+            <textarea name="description" id="description" cols="90" rows="10"></textarea>
             <br><br/>
             <button onclick="submitData()"> Submit </button>
             <button id="swapBtn"> Swap </button>

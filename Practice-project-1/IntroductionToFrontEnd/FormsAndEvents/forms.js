@@ -26,7 +26,6 @@ function myFunction() {
 
   let btnGroup = document.querySelectorAll('.btn')
   btnGroup.forEach(btn => {
-    console.log(btn)
     btn.disabled = true
     btn.classList.add('disabled')
   })
@@ -64,6 +63,7 @@ function myFunction() {
   let checkBoxes = document.querySelectorAll('input[type=checkbox]')
   checkBoxes.forEach((checkBox,index) => {
     checkBox.addEventListener('click' , (e) => {
+      console.log(e)
         if(e.target.checked) {
             checkBoxSelectedValue.push(e.target.value)
         }else {
@@ -222,4 +222,15 @@ function myFunction() {
   function stopInterval() {
     console.log('Stopping interval')
     clearInterval(interval)
+  }
+
+  let flagDisp = true
+  let paraTog = document.getElementById('paraToggle')
+  function toggle() {
+    flagDisp = !flagDisp
+    if(flagDisp) {
+      paraTog.style.display = 'block'
+    }else {
+      paraTog.style.display = 'none'
+    }
   }

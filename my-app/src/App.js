@@ -17,6 +17,7 @@ function App() {
        {showComponent ? <ExpenseDashboard/>:<FrontEndComponent/>}
        <FormHandler name='From handler and life cycle methods'/>
     </div>
+   
   );
 }
 

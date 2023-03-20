@@ -25,7 +25,6 @@ let abhishek = {
     __proto__ : employee
 }
 
-
 let Jaideep = {
     name : 'Jaideep',
     salary : 2000,
@@ -33,7 +32,7 @@ let Jaideep = {
     __proto__ : employee
 }
 
-console.log(abhishek)
+console.log(abhishek.hobby)
 
 
 // Prototype chaining 
@@ -49,18 +48,24 @@ let animal = {
     jumps: true,
     __proto__: animal
   };
+
+  console.log('-------------')
+  console.log(rabbit)
   
   let longEar = {
     earLength: 10,
+    walk : () => {
+      console.log('I am rabbit')
+    },
     __proto__: rabbit
   };
 
   let obj = new Object()
-  longEar.walk = function () {
-    console.log('Yo! Wassup')
-  }
+  // longEar.walk = function () {
+  //   console.log('Yo! Wassup')
+  // }
 
-  console.log(obj)
+  console.log('obj')
   console.log(longEar)
   console.log(longEar.earLength.toString())
   longEar.walk()

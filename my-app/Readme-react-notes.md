@@ -1,7 +1,7 @@
 Single page application
 React is a Js library , for building user interfaces.
 React is created and maintained by Facebook
-it has a component based architecture , It helos to breakdown our application into small encapsulated parts which is then further agrregated to create complex UI
+it has a component based architecture , It helps to breakdown our application into small encapsulated parts which is then further agrregated to create complex UI
 The main positive of using component is to write reusable code i.e a code can be used many times. We do not need to write the same code again and again for the same functionality . Just as we do in functions.
 React is decalrative --> i.e tell React what is the requirement and React with the help of React DOM livrary will create the required UI for you . (Artist example : draw a landscape)
 React can be integrated with any application. Just like Jquery.
