@@ -1,0 +1,43 @@
+#vigesh {
+    background-color: rgb(12, 187, 61);
+    color: rgb(245, 239, 239);
+    border: 2px solid rgb(239, 6, 6);
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+  }
+
+  .vikram {
+    background-color: rgb(53, 199, 9);
+    color: black;
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+  }
+
+  .ravindra {
+    background-color: rgb(173, 8, 8);
+    color: rgba(243, 240, 240, 0.953);
+    border-color: transparent;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+  }
+  .ravindra {
+    background-color: rgb(7, 35, 218);
+    color: rgba(243, 240, 240, 0.953);
+    border-color: transparent;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+  }
+  
+  .box {
+    height: 300px;
+    width: 300px;
+  }
+
+  .happy {
+    background-color: crimson;
+  }
