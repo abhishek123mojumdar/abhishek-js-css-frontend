@@ -7,7 +7,7 @@
     <title>We learn html</title>
   </head>
   <body>
-    <h1 id="abc">Hello I am Abhishek</h1>
+    <!-- <h1 id="abc">Hello I am Abhishek</h1>
     <h2 id="abc1">Hello I am Abhishek</h2>
     <h3 id="abc2">Hello I am Abhishek</h3>
     <h4 id="abc3">Hello I am Abhishek</h4>
@@ -199,11 +199,24 @@ In total, Tendulkar was part of 5 Ranji trophy finals, in which Mumbai won 4.[63
         culture,[72] is supported among these forests, and elsewhere, in
         protected habitats.
       </p>
-    </div>
+    </div> -->
+<div>
+  <div class="red box"> kerfuieru</div>
+  <div class="green box"> oehriufheiu</div>
+  <div class="yellow box">ekjrfiuehrui</div>
+</div>
+
+
 
     <hr />
     <style>
-      h1,
+      * {
+        color: red;
+        font-size: larger;
+        margin: 1rem;
+        padding: 0.5rem;
+      }
+       h1,
       h2,
       h3,
       h4,
@@ -219,7 +232,33 @@ In total, Tendulkar was part of 5 Ranji trophy finals, in which Mumbai won 4.[63
         border-radius: 5px;
       }
 
-      p {
+      div {
+        display: flex;
+      }
+
+      div.box {
+        height: 200px;
+        width: 200px;
+        color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 2rem;
+        padding: 1rem;
+      }
+
+      div.red {
+        background-color: red;
+      }
+      div.green {
+        background-color: green;
+      }
+      div.yellow {
+        background-color: yellow;
+        color: black;
+      }
+
+
+     /* p {
         padding: 2rem;
         margin: 1rem;
         background-color: cadetblue;
@@ -240,7 +279,7 @@ In total, Tendulkar was part of 5 Ranji trophy finals, in which Mumbai won 4.[63
       }
       #p4 {
         background-color: navy;
-      }
+      } */
     </style>
   </body>
 </html>

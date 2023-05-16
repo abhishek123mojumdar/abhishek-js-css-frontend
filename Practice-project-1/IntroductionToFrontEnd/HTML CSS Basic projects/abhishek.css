@@ -41,3 +41,32 @@
   .happy {
     background-color: crimson;
   }
+
+  .superParent {
+    padding: 1rem;
+    margin: 2rem;
+    border: 2px solid green;
+    box-shadow: 20px -10px 20px 10px rgb(0, 17, 255);
+    /* offset-x offset-y blur-radius spread-radius color */
+  }
+
+  .superParent > p{
+    margin: 2rem;
+    padding: 1rem;
+    color: red;
+    font-size: larger;
+    font-weight: 5rem;
+    background-color: black;
+    border: 1px solid red;
+  }
+
+  .Li3 + li + li + li + li + li + li > div + div p {
+    color: white;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin: 1rem;
+    padding: 2rem;
+  }

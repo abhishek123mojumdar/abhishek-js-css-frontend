@@ -102,7 +102,7 @@ section.decendant  > article {
     
 }  mix and match*/
 
-/* if we want to target the direct child of a tag we need to use > sign */
+/* if we want to target the direct (immediate) child of a tag we need to use > sign */
 
 .siblings {
     margin: 2rem;
