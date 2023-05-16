@@ -1,0 +1,77 @@
+/* there  4 kinds of positions
+absolute, relative , fixed and sticky.
+
+lets get to know them one by one.
+The default position of all element is static , the moment we put an element 
+into the html page it is static (default position will be from the top left corner)
+
+Absolute element need a relative parent , if they do not have a relative parent 
+they will position themselves corresponding to the body of the html.
+
+If there are mutiple elements that are specified as relative , the absolute element
+will position itself corresponding to the nearest relative parent.
+
+The initial position of the html body is Relative postion.
+All other html elements have initial position as static.
+
+Fixed elements position themselves corresponding to the body
+
+sticky position themselves corresponding to the parent element and remain sticky
+to the threshold value till the element is in the view port
+
+*/
+
+body {
+  height: 200vh;
+}
+
+
+.superBox {
+width: 500px;
+height: 500px;
+border: 2px solid red;
+margin: 4rem;
+}
+
+.parentBox {
+  width: 300px;
+  height: 300px;
+  border: 2px solid blue;
+  margin: 4rem;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 2px solid green;
+  background-color: yellowgreen;
+  position: fixed;
+  top: 30%;
+  left:30%
+}
+
+section {
+padding: 1rem;
+margin: 2rem;
+background-color: rgb(225, 173, 16);
+box-shadow: 2px 4x  lightblue;
+border-radius: 5px;
+border-color: transparent;
+color: rgb(3, 33, 58);
+height: 100vh;
+}
+
+p {
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  color: rgb(20, 5, 105);
+  position: sticky;
+  top:0;
+  border:1px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
