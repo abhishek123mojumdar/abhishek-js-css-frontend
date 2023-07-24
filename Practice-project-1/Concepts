@@ -1,0 +1,156 @@
+Code examples for [getter , setter functions][Object.create(), Object.assign(),Object.freeze()],[Constructor functions]
+
+# constructor functions
+function human (val1 ,val2 ,val3) {
+  this.name = val1;
+  this.age =val2;
+  this.address = val3;
+  this.getDetails = function () {
+    console.log('Hi this is ' + this.name + ' my age is ' + this.age)
+  }
+}
+
+let hObj1 = new human('Satish',20,'Karur')
+let pooja = new human('Pooja',78,'Bangalore')
+
+pooja.favFood = 'Biryani';
+hObj1.favSport = 'High jump';
+pooja.favSport = 'Boxing';
+
+console.log(hObj1)
+console.log(pooja)
+
+# Getter setter function
+let obj  = {
+  name: 'Vikram',
+  age:12,
+  salary:1200,
+  address : 'Marathalli',
+  set setSalary (value) {
+  this.salary = value
+}
+}
+
+
+obj.setSalary = obj.salary*2
+console.log(obj.salary)
+
+let obj  = {
+  name: 'Vikram',
+  age:12,
+  salary1:1200,
+  address : 'Marathalli',
+  get salary () {
+   return this.salary*2
+}
+}
+
+
+console.log(obj.salary)
+
+
+# Object create
+let masterObj = {
+  name : 'Master',
+  category :'Z',
+  attributes : 'Big dragon'
+}
+
+
+let littleObj = Object.create(masterObj)
+littleObj.power ='Spit fire'
+console.log(littleObj)
+
+
+# Object freeze / Object is frozen
+
+const masterObj = {
+  name : 'Master',
+  category :'Z',
+  attributes : 'Big dragon'
+}
+
+Object.freeze(masterObj)
+console.log(Object.isFrozen(masterObj))
+masterObj.name = 'Master dragon'
+masterObj.role = 'Dugen dragon'
+console.log(masterObj)
+
+
+# Rest and spread operrators
+
+function sum (...data) {
+  let summation = 0;
+  data.forEach (e => {
+    summation = summation+e
+  })
+  console.log(summation)
+}
+
+
+sum (1,2,3,4,5,6,7,8,9,0,223)
+
+
+let arr = [2,3,45,6,7,8,9,0]
+let arr1 =[5,6,3,12,34,6,7]
+
+let arr3 = [...arr , ...arr1]
+console.log(arr3)
+
+let obj1 = {
+  a:12,
+  b:13
+}
+
+
+let obj2 = {
+  ...obj1,
+  name:'Tamil',
+  sal:155000,
+  b:098765
+}
+
+
+
+console.log(obj2)
+
+
+let obj1 = {
+  a:12,
+  b:13
+}
+
+
+let obj2 = {
+  ...obj1,
+  name:'Tamil',
+  sal:155000,
+  b:098765
+}
+
+
+
+console.log(obj2)
+
+
+# Object assign 
+
+let arr =[1,2,3,22]
+let arr1 = [3,4,5,98,899]
+
+let val1 = Object.assign(arr1,arr)
+console.log(arr1)
+//console.log(val1)
+
+
+let obj ={
+  a:1,b:2
+}
+let obj1 = {
+  a:2,b:3,g:5
+}
+
+
+let val = Object.assign(obj,obj1)
+//console.log(obj)
+//console.log(val)
